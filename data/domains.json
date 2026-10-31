@@ -1,0 +1,12 @@
+[
+  {
+    "name": "signaling",
+    "title": "Cell Signaling",
+    "description": "Curated, quote-anchored knowledge base of the cell-signaling literature.",
+    "stats": {
+      "papers": 477,
+      "claims": 9085,
+      "edges": 4901
+    }
+  }
+]

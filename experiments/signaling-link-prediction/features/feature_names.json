@@ -1,0 +1,17 @@
+[
+  "A_outdeg",
+  "A_indeg",
+  "C_outdeg",
+  "C_indeg",
+  "inbetween_outdeg_mean",
+  "inbetween_indeg_mean",
+  "shortest_path_length",
+  "shortest_path_count",
+  "inbetween_avg_idf",
+  "rinbetween_avg_seen",
+  "A_idf",
+  "B_idf_mean",
+  "C_idf",
+  "r1_seen_mean",
+  "r2_seen_mean"
+]
