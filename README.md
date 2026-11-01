@@ -77,3 +77,21 @@ and `results/` reproduce the tables without re-running. Headline: classifiers be
 the random baseline ~6× on MAP and ~15× on P@10, while the transitive-closure
 baseline fails (F1 ≈ 0.02) — exactly the paper's qualitative result on a graph
 ~100× smaller.
+
+### Innovation as an edge-reinforced random walk (Iacopini et al. 2018 recreation)
+
+`experiments/signaling-innovation-errw/` recreates *"Network dynamics of innovation
+processes"* (PRL 2018): Heaps' law for the order in which concepts enter the literature,
+modelled as an edge-reinforced random walk on the concept co-occurrence network, with the
+reinforcement δw fitted so the walk reproduces the empirical exponent β.
+
+```sh
+cd experiments/signaling-innovation-errw
+python3 run.py && python3 plots.py   # numpy, scipy, networkx, matplotlib
+```
+
+Headline: the literature's β = 0.86 falls inside the paper's range, and the simulator
+reproduces the paper's small-world results. On this ~2k-node network, though, the walk
+saturates, so δw can be fitted only on the early part of the curve (δw* ≈ 17). At that
+value the walk is far burstier than the literature, which is indistinguishable from its
+locally reshuffled null.
